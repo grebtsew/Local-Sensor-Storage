@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  local_sensor_storage:
+    build: .
+    container_name: local_sensor_storage
+    volumes:
+      - ./logs:/app/logs     # Maps the local ./logs directory to /app/logs inside the container
+      - ./video:/app/video # Maps the local ./videos directory to /app/videos inside the container
+    environment:
+      - PYTHONUNBUFFERED=1   # Optional: ensures logs are immediately flushed to the console

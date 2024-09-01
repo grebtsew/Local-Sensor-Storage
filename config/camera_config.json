@@ -1,0 +1,12 @@
+{
+    "subnet":"192.168.1",
+    "ignore-ips": ["192.168.1.1","192.168.2.1"],
+    "RECORD_MAX_TIME":14,
+    "RECORD_MAX_SIZE":20,
+    "RECORDING_TIME":30,
+    "STORAGE_FOLDER":"./video",
+    "SHOW_STREAM":false,
+    "VIDEO_WIDTH":720,
+    "VIDEO_HEIGHT":480,
+    "FPS":20
+}
